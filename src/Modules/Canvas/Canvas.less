@@ -1,0 +1,31 @@
+@maxHeight: 600px;
+
+.container {
+  width: 100%;
+  height: @maxHeight;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.canvas {
+  border: 1px solid @decorColor;
+  transition: @transition;
+  background: #fff;
+
+  &.big {
+    width: 900px;
+    height: @maxHeight;
+  }
+
+  &.medium {
+    width: 600px;
+    height: 400px;
+  }
+
+  &.small {
+    width: 300px;
+    height: 200px;
+  }
+}
